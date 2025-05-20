@@ -1,0 +1,125 @@
+.results-container {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+.overall-score {
+  padding: 2rem 0;
+}
+
+.score-circle {
+  width: 150px;
+  height: 150px;
+  background: #f8f9fa;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem auto;
+  border: 8px solid;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.score-circle h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Score circle colors based on score percentage */
+.score-circle-excellent {
+  border-color: #28a745;
+}
+
+.score-circle-good {
+  border-color: #ffc107;
+}
+
+.score-circle-needs-improvement {
+  border-color: #dc3545;
+}
+
+.domain-score-item {
+  margin-bottom: 1.5rem;
+}
+
+.domain-score-item h5 {
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.domain-score-item .progress {
+  height: 25px;
+}
+
+.recommendation-item {
+  padding: 1rem 0;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.recommendation-item:last-child {
+  border-bottom: none;
+}
+
+.career-path-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.career-path-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.career-path-icon {
+  font-size: 2rem;
+  margin-right: 1rem;
+  color: #007bff;
+}
+
+.skill-tag {
+  background-color: #e9ecef;
+  border-radius: 4px;
+  padding: 0.25rem 0.5rem;
+  margin: 0.25rem;
+  font-size: 0.85rem;
+  display: inline-block;
+}
+
+.section-score-card {
+  margin-bottom: 1.5rem;
+  border-left: 4px solid;
+}
+
+.section-score-excellent {
+  border-left-color: #28a745;
+}
+
+.section-score-good {
+  border-left-color: #ffc107;
+}
+
+.section-score-needs-improvement {
+  border-left-color: #dc3545;
+}
+
+/* Print styles for PDF generation */
+@media print {
+  .results-container {
+    box-shadow: none;
+  }
+  
+  .btn-container {
+    display: none;
+  }
+}
